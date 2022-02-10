@@ -1,0 +1,16 @@
+{{!-- views/books/books-edit.hbs --}}
+
+<h2>Edit the Celebrity: {{celebrities.celName}}</h2>
+
+<form action="/celebrities/{{book._id}}/edit" method="post">
+  <label> name:
+    <input type="text" name="celName" value="{{celebrities.celName}}" />
+  </label>
+  <label> occupation:
+    <input type="text" name="occupation" value="{{celebrities.occupation}}" />
+  </label>
+  <label> catchPhrase:
+    <input type="text" name="cathphrase" value="{{celebrities.catchPhrase}}" />
+  </label>
+  <button>Save changes</button>
+</form>
