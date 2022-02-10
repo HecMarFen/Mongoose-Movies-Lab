@@ -38,6 +38,7 @@ router.get('/celebrities/:celebrityId', (req, res, next) => {
   });
 
   
+  //rout post to show the list of the celebrities
 router.post("/celebrities/newCelebrity", (req, res) => {
     //console.log(req.body);
     const {celName, occupation, catchPhrase}= req.body;
